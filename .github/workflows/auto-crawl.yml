@@ -21,17 +21,25 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run crawl script
-        run: python example_usage.py
+      - name: Run crawl script & save output
+        run: |
+          python example_usage.py > output.txt
+          cat output.txt
 
-      - name: Send email notification
+      - name: Send email with conference info
         uses: dawidd6/action-send-mail@v3
         with:
           server_address: smtp.gmail.com
           server_port: 587
-          username: yangzehui994@gmail.com
-          password: vhhvnuhgwxurxlle
-          from: yangzehui994@gmail.com
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          from: ${{ secrets.SMTP_SENDER }}
           to: yangzehui994@gmail.com
-          subject: 会议信息更新通知
-          body: 最新会议数据已抓取完成！
+          subject: 医学会议最新信息
+          body: |
+            今日抓取到的会议信息如下：
+            
+            ${{ env.MAIL_CONTENT }}
+            
+            自动发送，无需回复。
+          convert_markdown: true
