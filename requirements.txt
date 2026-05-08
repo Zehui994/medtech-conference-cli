@@ -1,0 +1,20 @@
+# 核心依赖
+click>=8.0.0
+rich>=10.0.0
+requests>=2.25.0
+beautifulsoup4>=4.9.0
+lxml>=4.6.0
+sqlalchemy>=1.4.0
+apscheduler>=3.7.0
+nltk>=3.6.0
+spacy>=3.1.0
+pydantic>=1.8.0
+python-dateutil>=2.8.0
+
+# 可选依赖
+selenium>=4.0.0  # 用于需要JavaScript渲染的网站
+slack-sdk>=3.0.0  # Slack通知集成
+pytest>=6.0.0  # 测试框架
+coverage>=6.0.0  # 测试覆盖率
+black>=21.0.0  # 代码格式化
+mypy>=0.900  # 类型检查
