@@ -30,7 +30,7 @@ jobs:
           server_address: smtp.gmail.com
           server_port: 587
           username: yangzehui994@gmail.com
-          password: 你的Gmail应用专用密码
+          password: vhhvnuhgwxurxlle
           from: yangzehui994@gmail.com
           to: yangzehui994@gmail.com
           subject: 会议信息更新通知
