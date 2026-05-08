@@ -109,7 +109,6 @@ medtech-conference-cli/
 
 ## 联系方式
 
-如有问题或建议，请通过以下方式联系我们：
+如有问题或建议，请通过以下方式联系我：
 
-- 邮箱：team@example.com
-- GitHub Issues：https://github.com/yourusername/medtech-conference-cli/issues
+- 邮箱：yangzehui994@gmail.com
