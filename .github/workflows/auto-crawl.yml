@@ -33,8 +33,8 @@ jobs:
           server_port: 587
           username: ${{ secrets.SMTP_USERNAME }}
           password: ${{ secrets.SMTP_PASSWORD }}
-          from: yangzehui994@gmail.com
-          to: yangzehui994@gmail.com
+          from: 
+          to: 
           subject: 医学会议最新信息
           body: |
             今日抓取到的会议信息如下：
